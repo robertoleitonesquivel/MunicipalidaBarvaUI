@@ -13,8 +13,40 @@ export class AlertsService {
     if (_message) {
       this._snackBar.open(_message, 'x', {
         duration: 5000,
+        verticalPosition: 'top',
         panelClass: ['success-alert']
       });
     }
   }
+
+  public Error(_message: string) {
+    if (_message) {
+      this._snackBar.open(_message, 'x', {
+        duration: 5000,
+        verticalPosition: 'top',
+        panelClass: ['success-alert']
+      });
+    }
+  }
+
+  public Info(_message: string) {
+    if (_message) {
+      this._snackBar.open(_message, 'x', {
+        duration: 5000,
+        verticalPosition: 'top',
+        panelClass: ['success-alert']
+      });
+    }
+  }
+
+  public Warning(_message: string) {
+    if (_message) {
+      this._snackBar.open(_message, 'x', {
+        duration: 5000,
+        verticalPosition: 'top',
+        panelClass: ['success-alert']
+      });
+    }
+  }
+
 }

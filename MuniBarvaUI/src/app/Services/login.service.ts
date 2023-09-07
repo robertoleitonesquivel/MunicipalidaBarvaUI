@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { EmployeesDTO } from '@app/Models/EmployeesDTO.interface';
+import { Employees } from '@Models/Employees.interface';
 import { environment } from '@Environments/environment.development';
 import { Login } from '@Models/login.interface'
 import { Observable } from 'rxjs';
@@ -15,8 +15,8 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
 
-  public SignIn(_data: Login): Observable<ApiResponse<EmployeesDTO>> {
-    return this.http.get<ApiResponse<EmployeesDTO>>(`${environment.apiUrl}Login?email=${_data.Email}&password=${_data.Password}`);
+  public SignIn(_data: Login): Observable<ApiResponse<Employees>> {
+    return this.http.get<ApiResponse<Employees>>(`${environment.apiUrl}Login?email=${_data.Email}&password=${_data.Password}`);
   }
 
   public Send(_data: RecoverPassword): Observable<ApiResponse<string>> {

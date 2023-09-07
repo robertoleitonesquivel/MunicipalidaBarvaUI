@@ -1,53 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-.grid-container{
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(12,1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   gap: 10px;
 
-  .col-lg-1{
+  .col-lg-1 {
     grid-column: span 12;
   }
-  .col-lg-2{
+  .col-lg-2 {
     grid-column: span 12;
   }
-  .col-lg-3{
+  .col-lg-3 {
     grid-column: span 12;
   }
-  .col-lg-4{
+  .col-lg-4 {
     grid-column: span 12;
   }
-  .col-lg-5{
+  .col-lg-5 {
     grid-column: span 12;
   }
-  .col-lg-6{
+  .col-lg-6 {
     grid-column: span 12;
   }
-  .col-lg-7{
+  .col-lg-7 {
     grid-column: span 12;
   }
-  .col-lg-8{
+  .col-lg-8 {
     grid-column: span 12;
   }
-  .col-lg-9{
+  .col-lg-9 {
     grid-column: span 12;
   }
-  .col-lg-10{
+  .col-lg-10 {
     grid-column: span 12;
   }
-  .col-lg-11{
+  .col-lg-11 {
     grid-column: span 12;
   }
-  .col-lg-12{
+  .col-lg-12 {
     grid-column: span 12;
   }
 }
 
-
-.success-alert{
-  background-color: aqua !important;
+.success-alert {
+  background: aqua !important;
 }

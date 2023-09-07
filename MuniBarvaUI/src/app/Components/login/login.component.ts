@@ -5,7 +5,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { finalize, tap } from 'rxjs';
 
 import { HttpErrorResponse } from '@angular/common/http';
-import { EmployeesDTO } from '@app/Models/EmployeesDTO.interface';
+import { Employees } from '@Models/Employees.interface';
 import { ApiResponse } from '@Models/response.interface';
 import { Login } from '@Models/login.interface';
 
@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
     private fb: FormBuilder,
     private loginSvc: LoginService,
     private commonSvc: CommonService,
-    private alertsSvc:AlertsService
+    private alertsSvc: AlertsService
   ) {
 
   }
@@ -61,7 +61,7 @@ export class LoginComponent implements OnInit {
     this.loginSvc.SignIn(_data).pipe(
       finalize(() => this.commonSvc.hide())
     ).subscribe({
-      next: (callback: ApiResponse<EmployeesDTO>) => {
+      next: (callback: ApiResponse<Employees>) => {
         console.log(callback)
       },
       error: (error: HttpErrorResponse) => {

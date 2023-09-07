@@ -5,14 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { LoaderComponent } from './Components/loader/loader.component'
+import { LoaderComponent } from '@Components/loader/loader.component'
 import { MatSnackBar } from '@angular/material/snack-bar';
-
+import { PrincipalComponent } from './Components/principal/principal.component';
+import { EmployeesComponent } from './Components/employees/employees.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoaderComponent
+    LoaderComponent,
+    PrincipalComponent,
+    EmployeesComponent
   ],
   imports: [
     BrowserModule,
